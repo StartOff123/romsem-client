@@ -1,0 +1,116 @@
+@import './_variables.scss';
+
+@font-face {
+    font-family: DIN_Pro;
+    src: url('../assets/fonts/dinpro.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    font-family: DIN_Pro;
+    background: #f7f2ed;
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background: $theme-color;
+    }
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    
+    &__container {
+        padding: 0 30px;
+        max-width: 1010px;
+        margin: 0 auto;
+    }
+}
+
+.bg {
+    content: '';
+    pointer-events: none;
+    opacity: 0;
+    transition: all .4s;
+
+    &_visib {
+        pointer-events: all;
+        opacity: 0.3;
+    }
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: .1) !important;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -20px !important;
+
+    & li button {
+        background: #A4ACAD !important;
+    }
+
+    &>.slick-active button {
+        background: $theme-color !important;
+
+    }
+}
+
+.p-link {
+    transition: all .2s;
+
+    svg {
+        fill: #A4ACAD !important;
+        transition: all .2s !important;
+
+    }
+
+    &:hover {
+        svg {
+            fill: $theme-color !important;
+        }
+    }
+}
+
+.ant-tabs-tab-active {
+    div {
+        color: $theme-color !important;
+    }
+
+}
+
+.ant-tabs-tab {
+    &:hover {
+        color: #A4ACAD !important;
+    }
+}
+
+.ant-tabs-nav {
+    &::before {
+        display: none !important;
+    }
+}
+
+.ant-tabs-ink-bar {
+    background: $theme-color !important;
+}
+
+.p-disabled {
+    opacity: 0;
+}

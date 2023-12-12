@@ -1,0 +1,23 @@
+$theme-color: #FF9846;
+$btn-color: #F46D40;
+$grey-color: #A4ACAD;
+
+.text-orange-500 {
+    color: $theme-color !important;
+}
+
+.text-gray-500 {
+    color: $grey-color !important;
+}
+
+.border-gray-500 {
+    border-color: $grey-color !important;
+}
+
+.bg-gray-500 {
+    background: $grey-color !important;
+}
+
+.bg-orange-500 {
+    background: $btn-color !important;
+} 

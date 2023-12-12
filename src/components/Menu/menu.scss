@@ -1,0 +1,23 @@
+.menu {
+    position: sticky;
+    position: -webkit-sticky;
+    max-width: 320px;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 49;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        z-index: 99;
+        left: -100%;
+        top: 0;
+        transition: all .2s;
+
+        &_open {
+            left: 0;
+        }
+    }
+}

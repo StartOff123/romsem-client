@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.button {
+    border-radius: 2px;
+
+    &:hover {
+        background: darken($color: $btn-color, $amount: 4) !important; 
+    }
+    
+    &:active {
+        background: darken($color: $btn-color, $amount: 7) !important; 
+    }
+}

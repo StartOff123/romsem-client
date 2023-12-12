@@ -1,0 +1,10 @@
+.main-layout {
+    display: flex;
+    height: fit-content;
+}
+
+@media (max-width: 1024px) {
+    .main-layout {
+        display: block;
+    }
+}
